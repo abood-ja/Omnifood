@@ -5,8 +5,13 @@
 
 - Font weights:
 Default: 400
+medium: 500
+semi-bold: 600
+bold: 700
 - Line heights:
 Default: 1
+1.05
+1.6
 
 
 
@@ -23,7 +28,7 @@ Greys:
 
 
 ---4 Border-radius
-
+default: 9px
 ---5 Whitespace
 
 - Spacing system (px)
@@ -67,6 +72,38 @@ body {
   gap: 9.6rem;
   padding: 0 3.2rem;
 }
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+.main-nav-link.nav-cl:link,
+.main-nav-link.nav-cl:visited {
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  color: #fff;
+  display: inline-block;
+  background-color: #e67e22;
+}
+.main-nav-link.nav-cl:hover,
+.main-nav-link.nav-cl:active {
+  background-color: #cf711f;
+}
+
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -84,9 +121,9 @@ body {
 .btn:visited {
   display: inline-block;
   font-size: 2rem;
-  padding: 1.6rem;
-  text-decoration: none;
+  padding: 1.6rem 3.2rem;
   border-radius: 9px;
+  text-decoration: none;
   font-weight: 600;
 }
 .btn--full:link,
