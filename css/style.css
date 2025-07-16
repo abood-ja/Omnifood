@@ -172,3 +172,9 @@
   background-color: #fae5d3;
   z-index: -1;
 }
+/***************************************/
+/* Meals section */
+/***************************************/
+.section-meals {
+  padding: 9.6rem 0;
+}
