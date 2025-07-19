@@ -115,12 +115,14 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
   }
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    transform: translateX(0);
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
