@@ -175,3 +175,5 @@
     grid-column: span 3;
   }
 }
+@media (max-width: 34em) {
+}
