@@ -16,7 +16,7 @@ const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    const header = link.getAttribute("href");
+    const href = link.getAttribute("href");
     // Scroll back to top
     if (href === "#") {
       window.scrollTo({
@@ -26,7 +26,7 @@ allLinks.forEach(function (link) {
     }
     // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
-      const section = document.querySelector("href");
+      const section = document.querySelector(href);
       section.scrollIntoView({ behavior: "smooth" });
     }
     // Close mobile navigation
