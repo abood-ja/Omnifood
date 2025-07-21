@@ -67,6 +67,11 @@
 .icon-mobile-nav[name="close-outline"] {
   display: none;
 }
+
+/* sticky navigation  */
+.sticky {
+  position: fixed;
+}
 /***************************************/
 /* Hero section */
 /***************************************/
